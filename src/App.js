@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Todos from "./componets/Todos";
 import Carsoul from "./componets/Carsoul";
 import Sorting from "./componets/Sorting";
+import Crud from "./componets/CRUD/Crud";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Routes>
         <Route exact path="/" element={<Todos />} />
         <Route exact path="/carsoul" element={<Carsoul />} />
+        <Route exact path="/crud" element={<Crud />} />
         <Route exact path="/sorting" element={<Sorting />} />
         <Route exact path="/login" element={<Login />} />
       </Routes>
